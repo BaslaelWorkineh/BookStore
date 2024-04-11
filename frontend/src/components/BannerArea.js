@@ -5,6 +5,7 @@ const BannerArea = () => {
     <section className="banner-area" id="home">	
       <div className="container">
         <div className="hero">
+        
           <div className="banner-content col-lg-7">
             <h5 className="text-white text-uppercase">Author: Travor James</h5>
             <h1 className="text-uppercase">

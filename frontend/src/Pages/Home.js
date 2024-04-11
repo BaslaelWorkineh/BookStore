@@ -5,7 +5,6 @@ import '../components/css/animate.min.css'
 import CallToAction from '../components/CallToAction'
 import BooksList from '../components/Books'
 import Footer from '../components/Footer'
-import TestimonialCarousel from '../components/Testimonial'
 
 export const Home = () => {
   return (

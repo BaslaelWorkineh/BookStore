@@ -2970,55 +2970,6 @@ h6 {
 
 
 
-.testimonial-area {
-  padding: 50px 0;
-  width: 95%;
-}
-
-.title {
-  margin-bottom: 30px;
-}
-
-.single-testimonial-item {
-  text-align: center;
-  padding: 30px;
-}
-
-.testimonial-image {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  transition: transform 0.3s ease-in-out;
-}
-
-.testimonial-image:hover {
-  transform: scale(1.1);
-}
-
-.testimonial-description {
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.testimonial-name {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-}
-
-.testimonial-position {
-  margin-top: 10px;
-  font-style: italic;
-  color: #777;
-}
-
-
 
 
 
@@ -3057,6 +3008,29 @@ h6 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .active-course-carusel {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .active-course-carusel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .active-course-carusel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 468px) {
+  .active-course-carusel {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .single-course {
