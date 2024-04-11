@@ -1,38 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Blog } from "./Pages/Blog";
+import { Contact } from "./Pages/Contact";
 
-const App = () => {
-  const [books, setBooks] = useState([]);
-
-  useEffect(() => {
-    // Fetch data from the backend API endpoint
-    axios.get('http://127.0.0.1:8000/')
-      .then(response => {
-        // Set the fetched data to the state
-        setBooks(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []); // Empty dependency array to ensure useEffect runs only once on component mount
-
+function App() {
   return (
-    <div>
-      <h1>Bookstore</h1>
-      <ul>
-        {books.map(book => (
-          <li key={book.id}>
-            <h2>{book.title}</h2>
-            <p>Author: {book.author}</p>
-            <p>Publication Date: {book.publication_date}</p>
-            <p>ISBN: {book.isbn}</p>
-            <p>Price: {book.price}</p>
-            <p>Description: {book.description}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <Router>
+        <NavBar />
+
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </Router>
+  </>
   );
-};
+}
 
 export default App;
