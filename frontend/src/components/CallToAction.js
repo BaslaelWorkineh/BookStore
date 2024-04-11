@@ -4,7 +4,7 @@ import { MdPhoneIphone as MdApple, MdAndroid } from 'react-icons/md';
 function CallToAction() {
   const sectionStyle = {
     padding: '80px 0',
-    backgroundImage: 'linear-gradient(90deg, lightgreen 0%, green 100%)',
+    
   }
   const headingStyle = {
     color: '#333',
