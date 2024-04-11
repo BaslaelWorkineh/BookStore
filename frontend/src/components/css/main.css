@@ -58,6 +58,7 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -2211,13 +2212,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: none;
   }
 }
-.banner-area{
-  background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
-  background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
-}
-.banner-content{
-  padding-top: 100px;
-}
+
 .p1-gradient-bg, .primary-btn, .banner-area, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
@@ -2710,11 +2705,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 600;
 }
 
-.testomial-area .owl-carousel .owl-item img {
-  width: auto !important;
+.testomial-area  {
+  width: 100%;
 }
 
-.testomial-area .owl-dots {
+.testomial-area{
   text-align: center;
   bottom: 5px;
   margin-top: 20px;
@@ -2725,26 +2720,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   backface-visibility: hidden;
 }
 
-.testomial-area .owl-dot {
-  height: 10px;
-  width: 10px;
-  display: inline-block;
-  background: rgba(127, 127, 127, 0.5);
-  margin-left: 5px;
-  margin-right: 5px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
 
-.testomial-area .owl-dot.active {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  background: #f53f51;
-}
 
 .single-testimonial {
   text-align: center;
@@ -2975,4 +2951,219 @@ h6 {
 
 .switch-wrap p {
   margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-area {
+  padding: 80px 0;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.testimonial-image {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-description {
+  text-align: center;
+}
+
+.testimonial-name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.testimonial-position {
+  text-align: center;
+  font-style: italic;
+}
+
+.banner-area{
+  background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content{
+  padding-top: 100px;
+}
+.sectionStyle{
+  background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
+  
+}
+
+
+
+.course-area {
+  padding: 80px;
+  background-color: #f9f9f9;
+}
+
+.course-area .title h1 {
+  margin-bottom: 10px;
+}
+
+.course-area .title p {
+  color: #666;
+}
+
+.active-course-carusel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.single-course {
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+.single-course:hover {
+  transform: translateY(-5px);
+}
+
+.single-course img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.single-course .sale-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.single-course .details {
+  padding: 20px;
+}
+
+.single-course .details a {
+  text-decoration: none;
+}
+
+.single-course .details h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.single-course .details .price {
+  color: #f5b921;
+}
+
+.single-course .details p {
+  color: #666;
+}
+
+/* Add your custom CSS for the footer here */
+/* You can either use an external CSS file or CSS-in-JS */
+/* Footer container */
+/* Footer container */
+/* Footer.css */
+/* Footer.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+}
+
+.footer-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav {
+  flex: 1;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu-item {
+  margin-bottom: 10px;
+}
+
+.footer-menu-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-menu-link:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer-bottom-text {
+  font-size: 14px;
 }
