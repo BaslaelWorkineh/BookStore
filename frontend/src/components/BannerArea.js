@@ -2,7 +2,7 @@ import React from 'react';
 import img from './img/header-img.png'
 const BannerArea = () => {
   return (
-    <section className="banner-area" id="home">	
+    <section className="banner-area" id="home" style={{zIndex:'999'}}>	
       <div className="container">
         <div className="hero">
         

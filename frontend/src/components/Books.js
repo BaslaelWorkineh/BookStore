@@ -94,7 +94,7 @@ function BooksList() {
             {courses.map(course => (
               <div className="single-course item" key={course.id}>
                 <img className="img-fluid" src={course.image} alt={course.title} />
-                <p className="sale-btn">For Sale</p>
+                
                 <div className="details">
                   <a href="#"><h4>{course.title} <span className="price float-right">{course.price}</span></h4></a>
                   <p>{course.description}</p>
