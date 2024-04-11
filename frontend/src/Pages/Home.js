@@ -11,7 +11,6 @@ export const Home = () => {
     <div>
       <BannerArea />
       <BooksList />
-      <CallToAction />
       <Footer />
     </div>
   )
